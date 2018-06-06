@@ -4,8 +4,8 @@ require "pry"
 def load_library(path)
   emoticons = YAML.load_file(path)
   library = {
-    get_meaning: {},
-    get_emoticon: {}
+    "get_meaning" => {},
+    "get_emoticon" => {}
   }
   
   emoticons.each do |meaning, value_arr|

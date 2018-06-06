@@ -16,10 +16,10 @@ def load_library(path)
   library
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon(western_emoticon)
+  library["get_emoticon"][western_emoticon]
 end
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(japanese_emoticon)
+  library["get_meaning"][japanese_emoticon]
 end

@@ -9,7 +9,6 @@ def load_library(path)
   }
   
   emoticons.each do |meaning, value_arr|
-    binding.pry
     library[:get_meaning][value_arr[1]] = meaning
     library[:get_emoticon][value_arr[0]] = value_arr[1]
   end
